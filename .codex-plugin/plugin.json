@@ -1,0 +1,6 @@
+{
+  "name": "doc-convert-skills",
+  "version": "1.0.0",
+  "description": "Device-aware OCR router, Windows native WinRT OCR, OCR/document intelligence, PDF/Office/Google Sheets processing (DOCX/PPTX/XLSX/LibreOffice), Chandra OCR 2, doc2math, Obsidian Markdown, AKF metadata, MarkItDown, ConvertX, CLI tools, and orchestration agents (23 skills).",
+  "skills": "./skills/"
+}

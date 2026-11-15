@@ -1,0 +1,4 @@
+interface:
+  display_name: "Device-Aware OCR Router"
+  short_description: "Profile device hardware and pick the best OCR & conversion route"
+  default_prompt: "Use $device-aware-ocr-router to inspect my device specs and documents, choose the optimal OCR/conversion engine, and run or plan the pipeline safely."
