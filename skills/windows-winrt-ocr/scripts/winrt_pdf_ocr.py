@@ -214,7 +214,7 @@ def run_winrt_ocr(
         }
         out_file.write_text(json.dumps(out_payload, indent=2, ensure_ascii=False), encoding="utf-8")
     elif fmt == "txt":
-        chunks = [f"--- [Sayfa {p}] ---\n\n{page_texts.get(p, '').strip() or '[Boş sayfa]'}\n\n" for p in range(1, total_pages + 1)]
+        chunks = [f"--- [Page {p}] ---\n\n{page_texts.get(p, '').strip() or '[Empty page]'}\n\n" for p in range(1, total_pages + 1)]
         out_file.write_text(f"{input_path.stem}\n{'=' * 60}\n\n" + "".join(chunks), encoding="utf-8")
     else:
         chunks = [f"## [Page {p}]\n\n{page_texts.get(p, '').strip() or '*(Empty page)*'}\n\n" for p in range(1, total_pages + 1)]
